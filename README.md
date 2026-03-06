@@ -4,7 +4,7 @@ This workspace now also includes a Zig 0.15.2 demo browser that keeps the
 original Blip_Buffer C++ synthesis backend intact while replacing the old demo
 frontend with SDL3, OpenGL, and Dear ImGui.
 
-![DemoLab Preview](images/DemoLab.png)
+<img src="images/DemoLab.png" width="800" height="auto" alt="DemoLab Preview">
 
 Build the modern frontend with:
 
@@ -12,13 +12,8 @@ Build the modern frontend with:
 
 Run it with:
 
-  zig build run
-
-If you want custom cache locations for CI or release packaging, pass Zig's
-standard cache flags directly, for example:
-
-  zig build --cache-dir .zig-cache --global-cache-dir .zig-cache
-
+  zig build Run
+  
 The Zig frontend lives under src/ and uses a small C++ bridge to drive the
 existing backend code in Blip_Buffer.cpp.
 
