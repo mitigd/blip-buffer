@@ -4,6 +4,8 @@ This workspace now also includes a Zig 0.15.2 demo browser that keeps the
 original Blip_Buffer C++ synthesis backend intact while replacing the old demo
 frontend with SDL3, OpenGL, and Dear ImGui.
 
+![DemoLab Preview](images/DemoLab.png)
+
 Build the modern frontend with:
 
   zig build
