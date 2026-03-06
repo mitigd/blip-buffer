@@ -1,3 +1,26 @@
+Modern Zig Frontend
+-------------------
+This workspace now also includes a Zig 0.15.2 demo browser that keeps the
+original Blip_Buffer C++ synthesis backend intact while replacing the old demo
+frontend with SDL3, OpenGL, and Dear ImGui.
+
+Build the modern frontend with:
+
+  zig build
+
+Run it with:
+
+  zig build run
+
+If you want custom cache locations for CI or release packaging, pass Zig's
+standard cache flags directly, for example:
+
+  zig build --cache-dir .zig-cache --global-cache-dir .zig-cache
+
+The Zig frontend lives under src/ and uses a small C++ bridge to drive the
+existing backend code in Blip_Buffer.cpp.
+
+
 Blip_Buffer 0.4.0: Band-Limited Sound Buffer
 --------------------------------------------
 Blip_Buffer provides waveform synthesis and sample buffering with a high-level
